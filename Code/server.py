@@ -1,6 +1,6 @@
 import socket
 
-IP_ADDRESS = '192.168.0.121'
+IP_ADDRESS = '192.168.56.102'
 PORT = 5678
 
 print ('Criando sockets')

@@ -34,7 +34,7 @@ def encrypt(key):
         q.task_done()
 
 #informação de conexao        
-IP_ADDRESS = '192.168.0.122'
+IP_ADDRESS = '192.168.0.101'
 PORT = 5678
 
 #Informação da encriptacao
